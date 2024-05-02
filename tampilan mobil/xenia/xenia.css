@@ -1,0 +1,122 @@
+/* General Styles */
+body {
+    background-color: #FFC55A; /* Tetap menggunakan warna latar belakang yang sama */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #00215E; /* Warna judul yang serupa dengan desain sebelumnya */
+    margin-top: 50px; /* Menambah jarak antara header dan konten */
+    font-size: 36px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff; /* Tetap menggunakan warna latar belakang yang sama */
+    border-radius: 10px; /* Memberikan tampilan yang lebih lembut */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Meningkatkan kejelasan bayangan */
+  }
+  
+  
+  .clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .gambar-mobil {
+    float: left;
+    width: 35%; /* Mengurangi lebar gambar */
+    text-align: center;
+    margin-right: 5%; /* Memberikan jarak antara gambar dan konten lainnya */
+  }
+  
+  .gambar-mobil img {
+    max-width: 100%; /* Memastikan gambar tidak melebihi lebar div */
+  }
+  
+  
+  .gambar-mobil img:hover {
+    transform: scale(1.05); /* Memperbesar gambar saat digulir */
+  }
+  
+  
+  .content-container {
+  float: right;
+  width: 60%; /* Mengurangi lebar kontainer isi */
+}
+
+.form-container {
+  background-color: #f2f2f2;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Meningkatkan kejelasan bayangan */
+}
+
+  
+  .estimasi-harga,
+  .lama-sewa {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  input[type="radio"] {
+    margin-right: 10px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  span {
+    margin-left: auto;
+  }
+  
+  select {
+    width: 100%;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .total-harga {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  
+  button[type="submit"] {
+    background-color: #FC4100; /* Warna tombol yang serupa dengan desain sebelumnya */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 20px;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #DB3A00; /* Warna tombol hover yang serupa dengan desain sebelumnya */
+  }
+  

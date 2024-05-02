@@ -1,0 +1,61 @@
+/* styles.css */
+
+
+body {
+    background-color: #FFC55A;
+    color: #00215E;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 36px;
+    color: #00215E;
+    margin-top: 50px; /* Menambah jarak antara header dan konten */
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1); /* Meningkatkan kejelasan bayangan */
+    border-radius: 10px; /* Memberikan tampilan yang lebih lembut */
+  }
+  
+  .car-card {
+    width: calc(25% - 20px);
+    margin-bottom: 30px; /* Menambah jarak antar kartu */
+    text-align: center;
+    border-radius: 10px; /* Memberikan tampilan yang lebih lembut */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Meningkatkan kejelasan bayangan */
+    transition: transform 0.3s ease; /* Animasi ketika kartu digulir */
+  }
+  
+  .car-card:hover {
+    transform: scale(1.05); /* Memperbesar kartu saat digulir */
+  }
+  
+  .car-card img {
+    width: 77%; /* Mengurangi lebar gambar */
+    max-height: 250px; /* Membatasi tinggi gambar */
+    object-fit: cover; /* Menjaga aspek gambar */
+    border-top-left-radius: 10px; /* Memberikan tampilan yang lebih lembut */
+    border-top-right-radius: 10px; /* Memberikan tampilan yang lebih lembut */
+  }
+  
+  
+  .car-card h3 {
+    margin: 10px 0;
+    color: #FC4100;
+    font-size: 20px;
+  }
+  
+  .car-card p {
+    margin: 5px 0;
+    color: #444; /* Mengubah warna teks agar lebih terlihat */
+    font-size: 16px;
+  }
+ 
+  
