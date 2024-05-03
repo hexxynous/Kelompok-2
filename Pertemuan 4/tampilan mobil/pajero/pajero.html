@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Mobil Pajero</title>
+  <link rel="stylesheet" href="pajero.css">
+</head>
+<body>
+    
+   <!-- navbar -->
+   <nav>
+    <div class="container1">
+        <a href="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\menu utama/menu.html"class="logo">
+          <img src="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\ICON GAMBAR/mobil.png" alt="Logo RENTO">
+        RENTO</a>
+        <ul class="menu">
+            <li><a href="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\menu utama/menu.html">HOME</a></li>
+            <li><a href="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\menu utama/menu.html">SEWA</a></li>
+            <li><a href="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\menu utama/menu.html">KONTAK KAMI</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- gambar mobil -->
+  <div class="container clearfix">
+    <div class="gambar-mobil">
+        <h1>PAJERO 2X2</h1>
+        <img src="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\ICON GAMBAR/pajero.png" alt="Gambar Mobil pajero" style="width: 100%;">
+        <p>7 KURSI / shifter MANUAL 2X2</p>
+    </div>
+        
+  <!-- informasi pemesanan -->
+    <div class="content-container">
+      <div class="form-container">
+        <div class="estimasi-harga">
+          <label for="estimasiHarga">Estimasi Harga</label>
+          <ul>
+            <li>
+              <input type="radio" id="12jam" name="harga" value="350000">
+              <label for="12jam">12 Jam</label>
+              <span>Rp 750.000</span>
+            </li>
+            <li>
+              <input type="radio" id="1hari" name="harga" value="700000">
+              <label for="1hari">1 Hari</label>
+              <span>Rp 1.500.000</span>
+            </li>
+            <li>
+              <input type="radio" id="3hari" name="harga" value="2100000">
+              <label for="3hari">3 Hari</label>
+              <span>Rp 4.500.000</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="lama-sewa">
+          <label for="lama-sewa">Berapa Hari:</label>
+          <select id="lama-sewa" name="lama-sewa" required>
+            <option value="">Pilih salah satu</option>
+            <option value="5">5 hari</option>
+            <option value="7">7 hari</option>
+            <option value="14">14 hari</option>
+          </select>
+        </div>
+
+        <div class="total-harga">
+          <p>Total Keseluruhan: <span id="totalHarga">Rp 0</span></p>
+        </div>
+
+        <button type="submit" id="pesanSekarang">PESAN SEKARANG</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="avanza.js"></script>
+</body>
+</html>
