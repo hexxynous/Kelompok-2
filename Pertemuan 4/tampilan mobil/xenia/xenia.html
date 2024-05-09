@@ -11,13 +11,14 @@
    <!-- navbar -->
    <nav>
     <div class="container1">
-        <a href="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\menu utama/menu.html"class="logo">
-          <img src="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\ICON GAMBAR/mobil.png" alt="Logo RENTO">
-        RENTO</a>
+        <a href="E:\MATKUL\Semester 4\Pemrograman Web\week 4\Pertemuan 4\menu utama/menu.html"class="logo">
+          <img src="E:\MATKUL\Semester 4\Pemrograman Web\week 4\Pertemuan 4\ICON GAMBAR/mobil.png" alt="Logo RENTO">
+        RENTO
+      </a>
         <ul class="menu">
-            <li><a href="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\menu utama/menu.html">HOME</a></li>
-            <li><a href="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\menu utama/menu.html">SEWA</a></li>
-            <li><a href="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\menu utama/menu.html">KONTAK KAMI</a></li>
+            <li><a href="E:\MATKUL\Semester 4\Pemrograman Web\week 4\Pertemuan 4\menu utama/menu.html">HOME</a></li>
+            <li><a href="E:\MATKUL\Semester 4\Pemrograman Web\week 4\Pertemuan 4\menu utama/menu.html">SEWA</a></li>
+            <li><a href="E:\MATKUL\Semester 4\Pemrograman Web\week 4\Pertemuan 4\menu utama/menu.html">KONTAK KAMI</a></li>
         </ul>
     </div>
 </nav>
@@ -26,7 +27,7 @@
   <div class="container clearfix">
     <div class="gambar-mobil">
         <h1>NEW XENIA</h1>
-        <img src="D:\falih\Matkul\SEMESTER 4\PEMOGRAMAN WEB\Pertemuan 4\ICON GAMBAR/xenia.png" alt="Gambar Mobil Xenia" style="width: 100%;">
+        <img src="E:\MATKUL\Semester 4\Pemrograman Web\week 4\Pertemuan 4\ICON GAMBAR/xenia.png" alt="Gambar Mobil Xenia" style="width: 100%;">
         <p>7 KURSI / shifter OTOMATIS</p>
     </div>
         
@@ -37,42 +38,60 @@
           <label for="estimasiHarga">Estimasi Harga</label>
           <ul>
             <li>
-              <input type="radio" id="12jam" name="harga" value="350000">
-              <label for="12jam">12 Jam</label>
-              <span>Rp 500.000</span>
-            </li>
-            <li>
-              <input type="radio" id="1hari" name="harga" value="700000">
-              <label for="1hari">1 Hari</label>
-              <span>Rp 1.000.000</span>
-            </li>
-            <li>
-              <input type="radio" id="3hari" name="harga" value="2100000">
-              <label for="3hari">3 Hari</label>
-              <span>Rp 3.000.000</span>
+              <input type="checkbox" id="SewaSupir" name="supir" value="200000">
+              <label for="SewaSupir">Sewa Supir</label>
+              <span>Rp 200.000</span>
             </li>
           </ul>
         </div>
 
         <div class="lama-sewa">
-          <label for="lama-sewa">Berapa Hari:</label>
-          <select id="lama-sewa" name="lama-sewa" required>
-            <option value="">Pilih salah satu</option>
-            <option value="5">5 hari</option>
-            <option value="7">7 hari</option>
-            <option value="14">14 hari</option>
-          </select>
+          <label for="durasiSewa">Berapa Hari:</label>
+          <input type="number" id="durasiSewa" name="durasiSewa" min="1" placeholder="Masukkan jumlah hari" required>
         </div>
 
-        <div class="total-harga">
-          <p>Total Keseluruhan: <span id="totalHarga">Rp 0</span></p>
+        <div id="totalHargaContainer" class="total-harga">
+          
         </div>
 
-        <button type="submit" id="pesanSekarang">PESAN SEKARANG</button>
-      </div>
+        <button type="submit" id="sewaButton">SEWA</button>
     </div>
   </div>
+</div>
 
-  <script src="avanza.js"></script>
+  <script>
+    // Fungsi untuk menghitung dan menampilkan total harga
+    function hitungTotal() {
+      var durasi = document.getElementById('durasiSewa').value;
+      var hargaPerHari = 350000; // Harga sewa mobil per hari
+      var totalHarga = durasi * hargaPerHari;
+  
+      // Memeriksa apakah opsi "Sewa Supir" dipilih
+      var sewaSupir = document.getElementById('SewaSupir');
+      if (sewaSupir.checked) {
+        totalHarga += 200000; // Biaya tambahan untuk sewa supir
+      }
+  
+      // Menampilkan total harga langsung
+      document.getElementById('totalHargaContainer').innerHTML = "<p>Total Harga: Rp " + totalHarga.toLocaleString() + "</p>";
+    }
+  
+    // Event listener untuk menghitung total harga saat tombol "SEWA" ditekan
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('sewaButton').addEventListener('click', function() {
+        hitungTotal();
+      });
+  
+      // Juga menghitung total harga saat ada perubahan pada input durasi sewa atau checkbox sewa supir
+      document.getElementById('durasiSewa').addEventListener('input', function() {
+        hitungTotal();
+      });
+  
+      document.getElementById('SewaSupir').addEventListener('change', function() {
+        hitungTotal();
+      });
+    });
+  </script>
+
 </body>
 </html>

@@ -1,0 +1,155 @@
+/* Reset CSS */
+body {
+    background-color: #FFC55A;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    text-align: center; /* Memposisikan judul ke tengah */
+    color: #00215E;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+/* Bagian Navbar */
+nav {
+    background-color: #00215E;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 10px 0;
+}
+
+.container1 {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: #FC4100;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    width: auto;
+    height: 30px;
+    margin-right: 5px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu li {
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu li a:hover {
+    color: #FFC55A;
+}
+
+/* Form Container */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Gaya untuk Input Tanggal */
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    background-color: #ffffff; /* Warna latar belakang input */
+    color: #333333; /* Warna teks */
+}
+
+/* Gaya untuk Label Input Tanggal */
+label[for="tanggal_sewa"] {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Gaya ketika Input Tanggal Difokuskan */
+input[type="date"]:focus {
+    outline: none; /* Hilangkan garis focus */
+    border-color: #FC4100; /* Warna border saat difokuskan */
+    box-shadow: 0 0 5px rgba(252, 65, 0, 0.5); /* Efek bayangan saat difokuskan */
+}
+
+/* Gaya untuk Teks di dalam Input Tanggal */
+input[type="date"]::placeholder {
+    color: #999999; /* Warna placeholder teks */
+}
+
+/* Gaya untuk Dropdown Kalender */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    /* Custom styling untuk tampilan dropdown kalender */
+    filter: invert(1); /* Memutar warna ikon untuk dropdown kalender (Chrome) */
+    cursor: pointer;
+}
+
+
+input[type="submit"] {
+    background-color: #FC4100;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #DB3A00;
+}
