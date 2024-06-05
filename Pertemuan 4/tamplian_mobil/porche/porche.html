@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rental Mobil Porche</title>
+  <link rel="stylesheet" href="porche.css">
+</head>
+<body>
+    
+   <!-- navbar -->
+   <nav>
+    <div class="container1">
+        <a href="../../menu utama/menu.html"class="logo">
+          <img src="../../ICON GAMBAR/mobil.png" alt="Logo RENTO">
+        RENTO</a>
+        <ul class="menu">
+            <li><a href="../../menu utama/menu.html">HOME</a></li>
+            <li><a href="../../menu utama/menu.html">SEWA</a></li>
+            <li><a href="../../menu utama/menu.html">KONTAK KAMI</a></li>
+        </ul>
+    </div>
+</nav>
+
+  <!-- gambar mobil -->
+  <div class="container clearfix">
+    <div class="gambar-mobil">
+        <h1>Porche GT3 RS</h1>
+        <img src="../../ICON GAMBAR/porche.png" alt="Gambar Mobil porche" style="width: 100%;">
+        <p>2 KURSI / shifter manual</p>
+    </div>
+  <!-- informasi pemesanan -->
+  <div class="content-container">
+    <div class="form-container">
+      <div class="estimasi-harga">
+  
+     <!-- chekbox pemesanan -->
+        <label for="estimasiHarga">ADD-ON</label>
+        <ul>
+          <li>
+            <input type="checkbox" id="SewaSupir" name="supir" value="200000">
+            <label for="SewaSupir">Sewa Supir</label>
+            <span>Rp 200.000</span>
+          </li>
+        </ul>
+      </div>
+  
+   <!-- textbox pemesanan -->
+   <div class="lama-sewa">
+    <label for="durasiSewa">Berapa Hari:</label>
+    <input type="number" id="durasiSewa" name="durasiSewa" min="1" placeholder="Masukkan jumlah hari" required>
+  </div>
+
+  <div id="totalHargaContainer" class="total-harga">
+  </div>
+ 
+  <!-- Mengarahkan ke halaman data.html saat tombol "SEWA" diklik -->
+  <button type="submit" id="sewaButton">SEWA SEKARANG</button>
+
+</div>
+</div>
+</div>
+
+<!-- JavaScript -->
+<script src="porche.js"></script>
+
+</body>
+</html>
