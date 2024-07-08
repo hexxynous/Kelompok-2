@@ -1,148 +1,47 @@
+/* crud.css */
+
 body {
-    background-color: #f8f9fa;
+    background-color: #FFC55A; /* Warna background */
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+    color: black; /* Warna font */
 }
 
 h1 {
     text-align: center;
-    color: #343a40;
-    margin-top: 20px;
-    font-size: 32px;
+    color: #00215E; /* Warna judul */
 }
 
 table {
     width: 80%;
     margin: 20px auto;
     border-collapse: collapse;
+    background-color: #00215E; /* Warna tabel */
+    color: black; /* Warna font dalam tabel */
 }
 
 table, th, td {
-    border: 1px solid #343a40;
+    border: 1px solid #00215E; /* Warna border tabel */
 }
 
 th, td {
-    padding: 10px;
-    text-align: left;
+    padding: 12px;
+    text-align: center;
 }
 
 th {
-    background-color: #343a40;
-    color: white;
+    background-color: #00215E; /* Warna background header tabel */
+    color: #FFFFFF; /* Warna font header tabel */
 }
 
 td {
-    background-color: #ffffff;
+    background-color: #FFFFFF; /* Warna background sel tabel */
 }
 
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.navbar {
-    background-color: #343a40;
-    padding: 10px 0;
-}
-
-.navbar .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar a {
-    color: white;
+a {
+    color: #00215E; /* Warna link */
     text-decoration: none;
-    font-size: 24px;
 }
 
-.navbar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    margin-left: 20px;
-}
-
-.navbar ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-    color: #ffc107;
-}
-
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    font-size: 16px;
-    color: white;
-    background-color: #007bff;
-    border: none;
-    border-radius: 5px;
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-.form-container {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    width: 80%;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-.form-group label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.form-group input[type="text"],
-.form-group input[type="email"],
-.form-group input[type="tel"],
-.form-group input[type="date"],
-.form-group input[type="file"],
-.form-group input[type="number"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ced4da;
-    border-radius: 5px;
-}
-
-button[type="submit"] {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-button[type="submit"]:hover {
-    background-color: #218838;
+a:hover {
+    text-decoration: underline;
 }
